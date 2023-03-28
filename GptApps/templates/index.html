@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's IT Help</title>
+</head>
+<body>
+    <h1>Ben's IT Help</h1>
+    <form action="/" method="post">
+        <label for="user_input">User:</label>
+        <input type="text" id="user_input" name="user_input" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if response %}
+    <p><strong>ChatGPT:</strong> {{ response }}</p>
+    {% endif %}
+</body>
+</html>
